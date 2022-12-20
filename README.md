@@ -22,6 +22,7 @@ Any other key pressed -> Invalid Operation
 The user will enter the int value to perform an action
 
 Using a switch case to perform different actions:-
+
 **1) Case 1:** 
 Checking details of the account using account no.
 So the user will be asked to enter the String i.e. enter your account no. whose details you want to know. 
