@@ -22,7 +22,7 @@ Any other key pressed -> Invalid Operation
 The user will enter the int value to perform an action
 
 Using a switch case to perform different actions:-
-1) Case 1: 
+**1) Case 1:** 
 Checking details of the account using account no.
 So the user will be asked to enter the String i.e. enter your account no. whose details you want to know. 
 If the account no. is valid that is if the String exists in the Hashmap then we will be printing out the details otherwise we will give the message "Incorrect Account No."
@@ -33,13 +33,13 @@ Balance in Account - map.get(UUID).get(2)
 (Note:- We are not going to give out the password as the details but they will be stored in the HashMap as a record)
 
 
-2) Case 2:
+**2) Case 2:**
 Adding money to the account, first, we need to get the account no. and the moneyToBeAdded as the input from the user. If an account no. entered is not present in the HashMap as the key then simply we will print "Incorrect Account No."
 But if account no. exists then we will get the balance from the Hashmap using the map.get(UUID).get(2) and add moneyToBeAdded in this balance and update the record with the newBalance
 (Remember that we stored balance as a string in the HashMap so for performing operations first convert it into int then again convert it into String and update the record in HashMap)
 
 
-3) Case 3:
+**3) Case 3:**
 Withdrawing money from the account, we will be requiring three things- account no., enteredPassword, and moneyToBeWithdrawn.
 First, check if the account no. exists or not- if not print "Incorrect Account No."
 
@@ -50,16 +50,16 @@ Check if moneyToBeWithdrawn is less than or greater than the balance in the acco
 But if is equal or greater- Get the balance of the account using the map.get(UUID).get(2)- convert the String into int and initialize a newBalance which is storing balance-moneyToBeWithdrawn- now convert newBalance into a string and update this value in the HashMap
 
 
-4) Case 4:
+**4) Case 4:**
 Calculating the interest amount on the account- for this get the account no. from the user- if invalid, print "Incorrect Account No.". If correct, use- map.get(UUID).get(2) to get the balance- convert it into String and call the function calculateInterest and the interest amount will be returned- print this interestAmount in the below format
 Total Interest Amount -> Rs.'interestAmount'
 
 
-5) Case 5:
+**5) Case 5:**
 Ask for account no. and password from the user- use a function to check if the given account no. exists in HashMap or not
 You can have a separate function for checking the Password- as we did in case 3 i.e. withdrawing money- use that function to check if enteredPassword is correct or not, giving at most 3 attempts to the user. 
 If enteredPassword is correct- now you will ask for the NewPassword- and simply update this NewPassword in the HashMap.
 
 
-5) Case 6:
+**5) Case 6:**
 Transfering funds from one account into another- for this firstly check that both account nos. are valid then using map.get(UUIDofDebAcc).get(2) and map.get(UUIDofCredAcc).get(2)- modify the balances and then update it into the HashMap
